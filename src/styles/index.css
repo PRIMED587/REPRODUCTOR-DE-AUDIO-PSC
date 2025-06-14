@@ -1,0 +1,162 @@
+
+body {
+    background: #0d0d1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://images3.alphacoders.com/136/thumb-1920-1364877.png");
+    background-size: 100%;
+    margin: 0;
+    padding-bottom: 150px;
+}
+
+
+#ElPotifay {
+    margin: 20px auto;
+    background-color: #1a1a2e;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 0 20px #8e44ad;
+}
+
+
+.ListaCancion {
+    background-color: #1f1f3d;
+    border-radius: 12px;
+    padding: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px #9b59b6;
+}
+
+
+.list-group-item {
+    background-color: #2c2c54;
+    color: #d4bfff;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0 5px #b983ff;
+}
+.list-group-item:hover {
+    background-color: #8e44ad;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px #b983ff;
+}
+
+
+.fixed-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f0037;
+    background-image: url("https://as2.ftcdn.net/jpg/01/98/26/03/1000_F_198260338_GORjoCFqiaB46WeiRlE6WdhNWeAW42UA.jpg");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 -4px 20px #c084fc;
+    z-index: 1000;
+}
+
+
+.btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin: 5px;
+    color: #fff;
+    background-color: #a259ff;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px #a259ff, 0 0 12px #a259ff;
+}
+.btn:hover {
+    background-color: #c084fc;
+    box-shadow: 0 0 15px #c084fc, 0 0 25px #c084fc;
+    transform: scale(1.08);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a259ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a259ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c084fc;
+    box-shadow: 0 0 15px #c084fc, 0 0 20px #c084fc;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #a259ff #1a1a2e;
+}
+
+.neon-icon {
+    color: #c084fc;
+    text-shadow:
+        0 0 5px #a259ff,
+        0 0 10px #a259ff,
+        0 0 15px #a259ff,
+        0 0 20px #c084fc;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.neon-icon:hover {
+    transform: scale(1.2);
+    text-shadow:
+        0 0 10px #c084fc,
+        0 0 20px #c084fc,
+        0 0 30px #c084fc,
+        0 0 40px #a259ff;
+}
+
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    #ElPotifay, .ListaCancion {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .list-group-item {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .fixed-player {
+        padding: 15px;
+    }
+
+    .list-group-item {
+        font-size: 0.9rem;
+    }
+}
