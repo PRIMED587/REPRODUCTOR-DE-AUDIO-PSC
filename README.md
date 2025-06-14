@@ -7,7 +7,7 @@
 
 
 
-# Hello World with React boilerplate![Uploading REPRODUCTOR API.jpg…]()
+# Hello World with React boilerplate
 
 
 Start coding a react application
